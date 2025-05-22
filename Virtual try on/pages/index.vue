@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="mx-auto lg:max-w-xl mt-10 mirror-container">
+    <Header />
+
+    <div class="mx-auto lg:max-w-xl mt-5 mirror-container">
       <div class="relative w-full h-[570px] overflow-hidden">
         <canvas id="WebARRocksFaceCanvas"></canvas>
         <canvas id="threeCanvas"></canvas>
@@ -60,6 +62,8 @@
 </template>
 
 <script setup>
+import Header from "~/components/Header.vue";
+
 onMounted(() => {
   const scripts = [
     "/dist/WebARRocksFace.js",
